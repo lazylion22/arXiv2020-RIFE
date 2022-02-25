@@ -111,7 +111,7 @@ if not args.video is None:
     videoCapture.release()
     if args.fps is None:
         fpsNotAssigned = True
-        args.fps = fps * (2 ** args.exp)
+        args.fps = fps 
     else:
         fpsNotAssigned = False
     videogen = skvideo.io.vreader(args.video)
